@@ -1,0 +1,21 @@
+[MobinHost-fedora]
+name=MobinHost Fedora $releasever - $basearch
+baseurl=https://mirror.mobinhost.com/fedora/releases/$releasever/Everything/$basearch/os/
+enabled=1
+metadata_expire=7d
+type=rpm
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+
+[MobinHost-updates]
+name=MobinHost Fedora $releasever - $basearch - Updates
+baseurl=https://mirror.mobinhost.com/fedora/updates/$releasever/Everything/$basearch/
+enabled=1
+metadata_expire=6h
+type=rpm
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
