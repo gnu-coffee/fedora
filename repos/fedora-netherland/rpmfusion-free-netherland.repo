@@ -1,0 +1,21 @@
+[NL-rpmfusion-free]
+name=RPM Fusion for Fedora $releasever - Free (Netherlands)
+baseurl=https://mirror.nl.leaseweb.net/rpmfusion/free/fedora/releases/$releasever/Everything/$basearch/os/
+enabled=1
+metadata_expire=7d
+type=rpm
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+skip_if_unavailable=False
+
+[NL-rpmfusion-free-updates]
+name=RPM Fusion for Fedora $releasever - Free - Updates (Netherlands)
+baseurl=https://mirror.nl.leaseweb.net/rpmfusion/free/fedora/updates/$releasever/$basearch/
+enabled=1
+metadata_expire=6h
+type=rpm
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+skip_if_unavailable=False

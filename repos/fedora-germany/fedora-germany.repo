@@ -1,0 +1,21 @@
+[DE-fedora]
+name=Fedora $releasever - $basearch (Germany)
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&arch=$basearch&country=DE
+enabled=1
+metadata_expire=7d
+type=rpm
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+
+[DE-updates]
+name=Fedora $releasever - $basearch - Updates (Germany)
+metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f$releasever&arch=$basearch&country=DE
+enabled=1
+metadata_expire=6h
+type=rpm
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False

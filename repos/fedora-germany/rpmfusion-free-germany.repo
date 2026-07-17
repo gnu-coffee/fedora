@@ -1,0 +1,21 @@
+[DE-rpmfusion-free]
+name=RPM Fusion for Fedora $releasever - Free (Germany)
+baseurl=https://ftp.fau.de/rpmfusion/free/fedora/releases/$releasever/Everything/$basearch/os/
+enabled=1
+metadata_expire=7d
+type=rpm
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+skip_if_unavailable=False
+
+[DE-rpmfusion-free-updates]
+name=RPM Fusion for Fedora $releasever - Free - Updates (Germany)
+baseurl=https://ftp.fau.de/rpmfusion/free/fedora/updates/$releasever/$basearch/
+enabled=1
+metadata_expire=6h
+type=rpm
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora-$releasever
+skip_if_unavailable=False
